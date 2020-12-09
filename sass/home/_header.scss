@@ -4,13 +4,43 @@
 #header{
     
     .navigation-row{
-        width: 1400px;
+        width: 1500px;
         height: 80px;
         margin:  0 auto 20px auto;
         display: flex;
         justify-content: space-between;
+        .col-2 img{
+            width: 200px;
+        }
+        .col-2 button{
+            width: 100px;
+            height: 60px;
+            border-radius: 4px;
+            margin-top: 10px;background-color: blanchedalmond;
+        }
+        .col-1 button{
+            width: 120px;
+            height: 60px;
+            border-radius: 4px;
+            margin-top: 10px;
+            background-color:blanchedalmond;
+            
+        }
+        .col-5{
+            .search-text{
+                width: 500px;
+                height: 40px;
+                margin-top: 10px;
+                margin-left: 50px;
+                border: 2px solid rgb(112, 103, 103);
+            }
+            .search-btn{
+                    color: black;
+                }
+        }
     }
 }
+
 
 .box {
     box-sizing: border-box;
