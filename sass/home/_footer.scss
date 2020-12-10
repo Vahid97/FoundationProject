@@ -1,0 +1,41 @@
+#footer{
+    .foot-section{
+        .up{
+            background-color: rosybrown;
+            height: 250px;
+            @extend .flex-column-center;
+            .f-name img{
+                width: 400px;
+            }
+            .f-gmail{
+                margin: 10px;
+                .fas{
+                    font-size: $font-ten*2;
+                }
+                .a{
+                    @extend .decor-color;
+                    font-size: $font-ten*2;
+                }
+            }
+            .f-contact{
+                .fas{
+                    font-size: $font-ten*2;
+                }
+                .a{
+                    @extend .decor-color;
+                    font-size: $font-ten*2;
+                }
+            }
+        }
+        .copyright{
+            height: 70px;
+            background-color: #005293;
+            box-sizing: border-box;
+            padding: 10px 0 0 7px;
+            .p{
+                color: white;
+            }
+            
+        }
+    }
+}
