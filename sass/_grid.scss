@@ -1,11 +1,29 @@
 $col-width:100%/12;
 
+
+.container-fluid{
+    width: 100%;
+    
+}
+.container {
+    width: 1200px;
+    
+    margin: 0 auto;
+}
+
+.row {
+    border: 1px solid red;
+    @extend .flex-between
+    
+}
+
 .col-1 {
     width: $col-width*1;
 }
 
 .col-2 {
     width: $col-width*2;
+    //border: 1px solid blue;
 }
 
 .col-3 {

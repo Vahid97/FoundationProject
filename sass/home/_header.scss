@@ -1,45 +1,89 @@
 #header{
-    
-    .navigation-row{
-        width: 1500px;
+    .logo{
         height: 80px;
-        margin:  0 auto 20px auto;
-        display: flex;
-        justify-content: space-between;
-        .col-2 img{
+        img{
             width: 200px;
         }
-        .col-2 button{
-            width: 100px;
-            height: 60px;
-            border-radius: 4px;
-            margin-top: 10px;background-color: blanchedalmond;
+    }
+    .menu{
+        width: 120px;
+        border-radius: 4px;
+        height: 60px;
+        background-color:blanchedalmond;
+        margin-top: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        padding-top: 20px;
+        a{
+            padding: 15px 35px 15px 35px;
+            text-decoration: none;
+            color: black;
         }
-        .col-1 button{
-            width: 120px;
-            height: 60px;
-            border-radius: 4px;
-            margin-top: 10px;
-            background-color:blanchedalmond;
+    }
+    .search-text{
+        width: 500px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 50px;
+        border: 2px solid rgb(112, 103, 103);
+    }
+    .search-btn{
+        color: black;
+    }
+    .registration{
+        position: relative;
+        width: 100px;
+        border-radius: 4px;
+        height: 50px;
+        background-color:blanchedalmond;
+        margin-top: 10px;
+        box-sizing: border-box;
+        //padding: 15px 0 0 15px;
+        //padding-top: 20px;
+        border: 1px solid red;
+        a{
+            position: absolute;
+            //padding: 15px 30px 15px 15px;
+            box-sizing: border-box;
+            padding: 15px 20px 15px 15px;
+            border: 1px solid blue;
+            text-decoration: none;
+            color: black;
             
-        }
-        .col-5{
-            .search-text{
-                width: 500px;
-                height: 40px;
-                margin-top: 10px;
-                margin-left: 50px;
-                border: 2px solid rgb(112, 103, 103);
-            }
-            .search-btn{
-                    color: black;
-                }
         }
     }
 }
 
-
-.box {
-    box-sizing: border-box;
-    box-shadow: 0px 0px 2px black;
+#head-cat {
+    .cat-items{
+        //width: 80%;
+        //margin: 0 auto;
+        ul{
+            //width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        li{
+            //display: inline-block
+            text-align: center;
+            display: flex;
+            align-items: center;
+            position: relative;
+            //width: 8%;
+        }
+        li::after{
+            content: "";
+            width: 1px;
+            background-color:#c01616;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            
+        }
+        a{
+            text-decoration: none;
+            
+        }
+    }
 }

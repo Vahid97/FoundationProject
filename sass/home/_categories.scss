@@ -1,78 +1,75 @@
 #categories{
-    .container{
-        width: $cont-width;
-        height: 550px;
-        margin:  0 auto 20px auto;
-        @extend .flex-column-between;
-        .row-1{
-            width: $cont-width;
-            height: 10%;
-            border: 1px solid blue;
+    padding: 30px 0 30px 0;
+    .section-head{
+        height: 55px;
+        border: 1px solid blue;
+        margin-bottom: 50px;
+        text-align: center;
+        h2::before{
+            content: '';
+            width: 30px;
+            height: 10px;
+            background: url(/img/titleico.png);
         }
-        .row-2{
-            width: 1200px;
-            height: 80%;
-            border: 1px solid red;
-            @extend .flex-between;
-            .col-2{
-                @extend .flex-column-center;
-                .book-img img{
-                    width: 200px;
-                }
-                .book-star{
-                color: chocolate;
-                }
-                .book-name {
-                    margin-top: $m-top;
-                    .a{
-                        text-decoration: none;
-                        color:rgb(0, 0, 0)
-                    }
-                }
-                .book-press{
-                    margin-top: $m-top*7;
-                    font-size: $font-ten;
-                    .a{
-                        text-decoration: none;
-                        color: rgb(66, 59, 59);
-                    }
-                }
+    }
+    .book-items{
+        height: 440px;
+        @extend .flex-column-center;
+        .book-img img{
+            width: 200px;
+        }
+        .book-star{
+        color: chocolate;
+        }
+        .book-name {
+            margin-top: $m-top;
+            a{
+                text-decoration: none;
+                color:rgb(0, 0, 0)
+            }
+        }
+        .book-press{
+            margin-top: $m-top*7;
+            font-size: $font-ten;
+            a{
+                text-decoration: none;
+                color: rgb(66, 59, 59);
+            }
+        }
                 
-                .book-author {
-                    font-size: $font-ten;
-                    margin: 5px;
-                    .a{
-                        text-decoration: none;
-                        color: rgb(66, 59, 59);
-                    }
-                }
-                .book-discount{
-                    width: 70%;
-                    margin-top: 15px;
-                    @extend .flex-between;
-                    .p{
-                        margin: 0;
+        .book-author {
+            font-size: $font-ten;
+            margin: 5px;
+            a{
+                text-decoration: none;
+                color: rgb(66, 59, 59);
+            }
+        }
+        .book-discount{
+            width: 70%;
+            margin-top: 15px;
+            @extend .flex-between;
+            p{
+                margin: 0;
                         
-                    }
-                }
-                .book-price {
-                    margin-top: $m-top;
-                    width: 150px;
-                    height: 40px;
-                    background-color: red;
-                    border-radius: 4px;
-                    text-align: center;
-                    @extend .flex-align-center;
-                    .a{
-                        width: 100%;
-                        padding: 10px 0 10px 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                        font-size: $font-ten*2;
-                        font-weight: bold;
-                    }
-                }
+            }
+        }
+        .book-price {
+            margin-top: $m-top;
+            width: 150px;
+            height: 40px;
+            background-color: red;
+            border-radius: 4px;
+            text-align: center;
+            @extend .flex-align-center;
+            a{
+                width: 100%;
+                padding: 10px 0 10px 0;
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                font-size: $font-ten*2;
+                font-weight: bold;
             }
         }
     }

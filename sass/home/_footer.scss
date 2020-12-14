@@ -1,41 +1,38 @@
 #footer{
-    .foot-section{
-        .up{
-            background-color: rosybrown;
-            height: 250px;
-            @extend .flex-column-center;
-            .f-name img{
-                width: 400px;
+    .foot-up{
+        background-color: rosybrown;
+        height: 250px;
+        @extend .flex-column-center;
+        .f-name img{
+            width: 400px;
+        }
+        .f-gmail{
+            margin: 10px;
+            i{
+                font-size: $font-ten*2;
             }
-            .f-gmail{
-                margin: 10px;
-                .fas{
-                    font-size: $font-ten*2;
-                }
-                .a{
-                    @extend .decor-color;
-                    font-size: $font-ten*2;
-                }
-            }
-            .f-contact{
-                .fas{
-                    font-size: $font-ten*2;
-                }
-                .a{
-                    @extend .decor-color;
-                    font-size: $font-ten*2;
-                }
+            a{
+                @extend .decor-color;
+                font-size: $font-ten*2;
             }
         }
-        .copyright{
-            height: 70px;
-            background-color: #005293;
-            box-sizing: border-box;
-            padding: 10px 0 0 7px;
-            .p{
-                color: white;
+        .f-contact{
+            i{
+                font-size: $font-ten*2;
             }
-            
+            a{
+                @extend .decor-color;
+                font-size: $font-ten*2;
+            }
+        }
+    }
+    .foot-down{
+        height: 70px;
+        background-color: #005293;
+        box-sizing: border-box;
+        padding: 10px 0 0 7px;
+        p{
+            color: white;
         }
     }
 }
