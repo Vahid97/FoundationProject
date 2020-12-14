@@ -1,1 +1,1 @@
-Layihe https://www.bkmkitap.com/ saytina uygun yazilir
+Layihə https://www.bkmkitap.com/ saytına uyğun yazılır
