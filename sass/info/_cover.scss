@@ -1,0 +1,169 @@
+#cover {
+    .book-cover{
+        height: 600px;
+        border: 1px solid blue;
+        margin: 5px;
+        position: relative;
+        a{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    .book-info{
+        height: 600px;
+        border: 1px solid blue;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .author{
+            
+            span{
+                font-size: 33px;
+                font-weight: bold;
+                display: block;
+                margin-bottom: 15px;
+            }
+            a{
+                text-decoration: none;
+                color: rgb(9, 9, 44);
+                font-size: 30px;
+                
+            }
+            .star{
+                i{
+                    color: brown;
+                    font-size: 20px;
+                }
+            }
+        
+        }
+        .bilgiler{
+            width: 85%;
+            margin: 0 auto;
+            
+            .b-up{
+                p{
+                    font-size: 15px;
+                    line-height: 30px;
+                    font-weight: bold;
+                }
+            }
+            .b-down{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .stat{
+                    width: 45%;
+                    height: 130px;
+                    border: 1px solid blue;
+                    
+                }
+            }
+        }
+
+    }
+    .book-price{
+        height: 600px;
+        border: 1px solid blue;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .price{
+            display: flex;
+            //justify-content: space-between;
+            height: 200px;
+            border: 1px solid blue;
+            .qiymet{
+                .ust{
+                    font-size: 20px;
+                    padding-left: 15px;
+
+                }
+                .alt{
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: red;
+                    padding-left: 5px;
+                }
+            }
+            .endirim{
+                background-color: green;
+                width: 70px;
+                text-align: center;
+                display: flex;
+                
+                p{
+                    color: white;
+                }
+            }
+            .sepet{
+                .qiymet{
+                    font-size: 20px;
+                }
+                .kazanc{
+                    padding: 15px;
+                }
+                p{
+                    display: inline-block;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 15px;
+                    margin: 5px;
+                    padding: 20px;
+                    color: white;
+                    background-color: rgb(185, 94, 94);
+                }
+            }
+
+        }
+    }
+    .author-info{
+        height: 200px;
+        border: 1px solid blue;
+        position: relative;
+        text-align: center;
+        background-color: brown;
+        p{
+            margin: 10px 0 10px 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            //position: absolute;
+        }
+        .shekil{
+            width: 110px;
+            height: 110px;
+            border-radius: 100%;
+            border: 1px solid blue;
+            position: absolute;
+            top: -20%;
+            left: -7%;
+            background-color: white;
+        }
+        .haqqinda{
+            margin: 0 auto 10px auto;
+            
+            height: 75%;
+            width: 97%;
+            background-color: rgb(255, 255, 255);
+            
+            
+            a{
+                text-decoration: none;
+                color: black;
+                padding: 5px 10px 5px 10px;
+                cursor: pointer;
+                
+            }
+            p{
+                color: black;
+                padding: 50px 0 50px 0;
+            }
+        }
+    }
+}

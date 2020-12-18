@@ -1,0 +1,22 @@
+#comment{
+    .yorumlar{
+        .ust-yorum{
+            .ust{
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .alt{
+                font-size: 17px;
+                font-weight: lighter;
+                display: inline-block;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+                font-weight: bold;
+
+            }
+        }
+    }
+}

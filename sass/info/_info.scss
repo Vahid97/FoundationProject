@@ -1,0 +1,35 @@
+#info{
+    margin-top: 20px;
+    .ozel-odeme{
+        display: flex;
+        width: 100%;
+        
+        .sol{
+            text-align: center;
+            span{
+                padding: 3px 230px 3px 200px;
+                cursor: pointer;
+                background-color: blue;
+                color: white;
+            }
+        }
+        .sag{
+            text-align: center;
+            span{
+                padding: 3px 223px 3px 200px;
+                cursor: pointer;
+                background-color: red;
+                color: white;
+            }
+        }
+    }
+    .icerik{
+        .a{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .b{
+            font-size: 20px;
+        }
+    }
+}
