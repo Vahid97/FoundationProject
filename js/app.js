@@ -1,19 +1,27 @@
 
 
 
-let liOneClick = queryselector(".li-1");
-let liTwoClick = queryselector(".li-2");
-let liThreeClick = queryselector(".li-3");
-let liFourClick = queryselector(".li-4");
-let liFiveClick = queryselector("li-5");
+let liOneClick = document.querySelector(".li-1");
+let liTwoClick = document.querySelector(".li-2");
+let liThreeClick = document.querySelector(".li-3");
+let liFourClick = document.querySelector(".li-4");
+let liFiveClick = document.querySelector("li-5");
 
 
-let imgOne = queryselector("img-1");
-let imgTwo = queryselector("img-2");
-let imgThree = queryselector("img-3");
-let imgFour = queryselector("img-4");
-let imgFive = queryselector("img-5");
+let imgOne = document.querySelector(".img-1");
+let imgTwo = document.querySelector(".img-2");
+let imgThree = document.querySelector(".img-3");
+let imgFour = document.querySelector(".img-4");
+let imgFive = document.querySelector(".img-5");
 
 liOneClick.addEventListener('click', function () {
+    //imgOne.style.display = "none"
     imgOne.style.display = "block";
+    
+    
+})
+
+liTwoClick.addEventListener('click', function () {
+    imgTwo.style.display = "block";
+    
 })

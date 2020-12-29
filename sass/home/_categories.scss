@@ -2,21 +2,31 @@
     padding: 30px 0 30px 0;
     .section-head{
         height: 55px;
-        border: 1px solid blue;
-        margin-bottom: 50px;
+        //border: 1px solid blue;
+        margin-bottom: 10px;
         text-align: center;
-        h2::before{
-            content: '';
-            width: 30px;
-            height: 10px;
-            background: url(/img/titleico.png);
+        
+        h1{
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(54, 54, 54);
+            display: inline-block;
+            padding: 0px 10px 0px 10px;
         }
+        i{
+            color: #f58322;
+        }
+        
     }
     .book-items{
         height: 440px;
         @extend .flex-column-center;
-        .book-img img{
-            width: 200px;
+
+        .book-img {
+            
+            img{
+                width: 195px;
+            }
         }
         .book-star{
         color: chocolate;
@@ -33,24 +43,30 @@
             font-size: $font-ten;
             a{
                 text-decoration: none;
-                color: rgb(66, 59, 59);
+                color:#f58322;
+                font-weight: bold;
             }
         }
                 
         .book-author {
             font-size: $font-ten;
-            margin: 5px;
+            margin: 1px;
             a{
                 text-decoration: none;
-                color: rgb(66, 59, 59);
+                color:#f58322;
+                font-weight: bold;
             }
         }
         .book-discount{
             width: 70%;
             margin-top: 15px;
             @extend .flex-between;
+            span{
+                color: rgb(75, 75, 75);
+            }
             p{
                 margin: 0;
+                color: red;
                         
             }
         }

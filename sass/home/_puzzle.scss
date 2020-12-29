@@ -12,10 +12,18 @@
             background: brown;
             .left-images{
                 li{
+                    top: 0%;
+                    left: 0%;
                     z-index: 2;
                     position: absolute;
                     display: none;
+                    
                     list-style: none;
+                    transition: ease 0.1s;
+                    img{
+                        width:880px;
+                        height: 490px;
+                    }
                 }
             }
             .left-buttons{

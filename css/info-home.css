@@ -1,29 +1,55 @@
-#comment .yorumlar .ust-yorum .ust {
+#comment .ust-yorum {
+  margin: 10px;
+}
+
+#comment .ust-yorum .ust {
   font-size: 28px;
   font-weight: bold;
 }
 
-#comment .yorumlar .ust-yorum .alt {
+#comment .ust-yorum .alt {
   font-size: 17px;
   font-weight: lighter;
   display: inline-block;
 }
 
-#comment .yorumlar .ust-yorum a {
+#comment .ust-yorum a {
   text-decoration: none;
   color: black;
   font-size: 18px;
   font-weight: bold;
 }
 
+#comment .col-3 {
+  margin: 10px;
+}
+
+#comment .sol-yorum .yes-no .evet {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #b4b4b4;
+  border-radius: 2px;
+}
+
+#comment .sag-yorum p {
+  color: #505050;
+}
+
+#cover {
+  margin: 20px;
+}
+
 #cover .book-cover {
   height: 600px;
-  border: 1px solid blue;
   margin: 5px;
   position: relative;
+  background-color: #f8f8f8;
 }
 
 #cover .book-cover a {
+  border: 1px solid dimgray;
+  padding: 80px 60px 80px 60px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -33,8 +59,7 @@
 
 #cover .book-info {
   height: 600px;
-  border: 1px solid blue;
-  margin: 5px;
+  margin-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,6 +75,7 @@
 #cover .book-info .author span {
   font-size: 33px;
   font-weight: bold;
+  color: #414141;
   display: block;
   margin-bottom: 15px;
 }
@@ -57,6 +83,13 @@
 #cover .book-info .author a {
   text-decoration: none;
   color: #09092c;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#cover .book-info .author h1 a {
+  text-decoration: none;
+  color: #f58322;
   font-size: 30px;
 }
 
@@ -68,6 +101,7 @@
 #cover .book-info .bilgiler {
   width: 85%;
   margin: 0 auto;
+  background-color: #f8f8f8;
 }
 
 #cover .book-info .bilgiler .b-up p {
@@ -89,12 +123,10 @@
 #cover .book-info .bilgiler .b-down .stat {
   width: 45%;
   height: 130px;
-  border: 1px solid blue;
 }
 
 #cover .book-price {
   height: 600px;
-  border: 1px solid blue;
   margin: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,7 +145,6 @@
   display: -ms-flexbox;
   display: flex;
   height: 200px;
-  border: 1px solid blue;
 }
 
 #cover .book-price .price .qiymet .ust {
@@ -142,11 +173,12 @@
 }
 
 #cover .book-price .price .sepet .qiymet {
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 #cover .book-price .price .sepet .kazanc {
-  padding: 15px;
+  padding: 30px;
 }
 
 #cover .book-price .price .sepet p {
@@ -156,7 +188,7 @@
 #cover .book-price .price .sepet a {
   text-decoration: none;
   font-size: 15px;
-  margin: 5px;
+  margin: 30px;
   padding: 20px;
   color: white;
   background-color: #b95e5e;
@@ -164,10 +196,9 @@
 
 #cover .author-info {
   height: 200px;
-  border: 1px solid blue;
   position: relative;
   text-align: center;
-  background-color: brown;
+  background-color: #F3BB91;
 }
 
 #cover .author-info p {
@@ -180,6 +211,7 @@
 #cover .author-info .shekil {
   width: 110px;
   height: 110px;
+  z-index: 1;
   border-radius: 100%;
   border: 1px solid blue;
   position: absolute;
@@ -193,17 +225,36 @@
   height: 75%;
   width: 97%;
   background-color: white;
+  position: relative;
 }
 
-#cover .author-info .haqqinda a {
+#cover .author-info .haqqinda .a {
+  position: absolute;
+  bottom: 0%;
+  right: 1%;
   text-decoration: none;
+  color: black;
+  padding: 5px 10px 5px 10px;
+  background-color: #dadada;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cover .author-info .haqqinda .b {
+  position: absolute;
+  bottom: 0%;
+  right: 30%;
+  text-decoration: none;
+  margin-right: 5px;
+  background-color: #dadada;
+  border-radius: 5px;
   color: black;
   padding: 5px 10px 5px 10px;
   cursor: pointer;
 }
 
 #cover .author-info .haqqinda p {
-  color: black;
+  color: #383838;
   padding: 50px 0 50px 0;
 }
 

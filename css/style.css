@@ -7,10 +7,6 @@
   margin: 0 auto;
 }
 
-.row {
-  border: 1px solid red;
-}
-
 .col-1 {
   width: 8.33333%;
 }
@@ -161,67 +157,140 @@ body {
   color: white;
 }
 
-#header .logo {
+#header .row {
+  background-color: #f8f8f8;
+}
+
+#header .row .logo {
   height: 80px;
 }
 
-#header .logo img {
+#header .row .logo img {
   width: 200px;
 }
 
-#header .menu {
+#header .row .menu {
   width: 120px;
   border-radius: 4px;
-  height: 60px;
+  height: 55px;
   background-color: blanchedalmond;
   margin-top: 10px;
+  border: 1px solid black;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
   padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-#header .menu a {
-  padding: 15px 35px 15px 35px;
+#header .row .menu a {
   text-decoration: none;
   color: black;
 }
 
-#header .search-text {
-  width: 500px;
-  height: 40px;
-  margin-top: 10px;
-  margin-left: 50px;
-  border: 2px solid #706767;
+#header .row .menu i {
+  padding-left: 20px;
+  padding-right: 10px;
 }
 
-#header .search-btn {
-  color: black;
-}
-
-#header .registration {
-  position: relative;
-  width: 100px;
-  border-radius: 4px;
+#header .row .search-box .search-text {
+  width: 540px;
   height: 50px;
-  background-color: blanchedalmond;
+  margin-top: 10px;
+  border: 2px solid #706767;
+  border-radius: 3px;
+}
+
+#header .row .search-box .search-btn {
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  font-size: 15px;
+  border: 1px solid black;
+  padding: 17px 15px 19px 10px;
+  border-radius: 3px;
+}
+
+#header .row .registration {
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  height: 55px;
   margin-top: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid red;
 }
 
-#header .registration a {
-  position: absolute;
+#header .row .registration a {
+  text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 15px 20px 15px 15px;
-  border: 1px solid blue;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
   text-decoration: none;
-  color: black;
+  color: #f58322;
 }
 
-#head-cat .cat-items ul {
+#header .row .registration a i {
+  color: #f58322;
+  padding-right: 7px;
+  font-size: 15px;
+}
+
+#header .row .registration-m {
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  height: 55px;
+  margin-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#header .row .registration-m a {
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: #636161;
+}
+
+#header .row .registration-m a i {
+  color: #f58322;
+  padding-right: 7px;
+  font-size: 16px;
+}
+
+#head-cat {
+  border-top: 1px solid black;
+}
+
+#head-cat .container-fluid {
+  background-color: #f8f8f8;
+}
+
+#head-cat .container-fluid .cat-items ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,7 +299,7 @@ body {
           justify-content: space-between;
 }
 
-#head-cat .cat-items li {
+#head-cat .container-fluid .cat-items li {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,18 +310,22 @@ body {
   position: relative;
 }
 
-#head-cat .cat-items li::after {
+#head-cat .container-fluid .cat-items li a {
+  color: black;
+}
+
+#head-cat .container-fluid .cat-items li::after {
   content: "";
-  width: 1px;
-  background-color: #c01616;
-  height: 100%;
+  width: 0.5px;
+  background-color: #929292;
+  height: 30%;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
-#head-cat .cat-items a {
+#head-cat .container-fluid .cat-items a {
   text-decoration: none;
 }
 
@@ -262,16 +335,20 @@ body {
 
 #categories .section-head {
   height: 55px;
-  border: 1px solid blue;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-#categories .section-head h2::before {
-  content: '';
-  width: 30px;
-  height: 10px;
-  background: url(/img/titleico.png);
+#categories .section-head h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #363636;
+  display: inline-block;
+  padding: 0px 10px 0px 10px;
+}
+
+#categories .section-head i {
+  color: #f58322;
 }
 
 #categories .book-items {
@@ -279,7 +356,7 @@ body {
 }
 
 #categories .book-items .book-img img {
-  width: 200px;
+  width: 195px;
 }
 
 #categories .book-items .book-star {
@@ -302,17 +379,19 @@ body {
 
 #categories .book-items .book-press a {
   text-decoration: none;
-  color: #423b3b;
+  color: #f58322;
+  font-weight: bold;
 }
 
 #categories .book-items .book-author {
   font-size: 10px;
-  margin: 5px;
+  margin: 1px;
 }
 
 #categories .book-items .book-author a {
   text-decoration: none;
-  color: #423b3b;
+  color: #f58322;
+  font-weight: bold;
 }
 
 #categories .book-items .book-discount {
@@ -320,8 +399,13 @@ body {
   margin-top: 15px;
 }
 
+#categories .book-items .book-discount span {
+  color: #4b4b4b;
+}
+
 #categories .book-items .book-discount p {
   margin: 0;
+  color: red;
 }
 
 #categories .book-items .book-price {
@@ -379,10 +463,19 @@ body {
 }
 
 #puzzle .puzzle-left .left-up .left-images li {
+  top: 0%;
+  left: 0%;
   z-index: 2;
   position: absolute;
   display: none;
   list-style: none;
+  -webkit-transition: ease 0.1s;
+  transition: ease 0.1s;
+}
+
+#puzzle .puzzle-left .left-up .left-images li img {
+  width: 880px;
+  height: 490px;
 }
 
 #puzzle .puzzle-left .left-up .left-buttons {
@@ -429,32 +522,58 @@ body {
   margin: 10px;
 }
 
-#comment .yorumlar .ust-yorum .ust {
+#comment .ust-yorum {
+  margin: 10px;
+}
+
+#comment .ust-yorum .ust {
   font-size: 28px;
   font-weight: bold;
 }
 
-#comment .yorumlar .ust-yorum .alt {
+#comment .ust-yorum .alt {
   font-size: 17px;
   font-weight: lighter;
   display: inline-block;
 }
 
-#comment .yorumlar .ust-yorum a {
+#comment .ust-yorum a {
   text-decoration: none;
   color: black;
   font-size: 18px;
   font-weight: bold;
 }
 
+#comment .col-3 {
+  margin: 10px;
+}
+
+#comment .sol-yorum .yes-no .evet {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #b4b4b4;
+  border-radius: 2px;
+}
+
+#comment .sag-yorum p {
+  color: #505050;
+}
+
+#cover {
+  margin: 20px;
+}
+
 #cover .book-cover {
   height: 600px;
-  border: 1px solid blue;
   margin: 5px;
   position: relative;
+  background-color: #f8f8f8;
 }
 
 #cover .book-cover a {
+  border: 1px solid dimgray;
+  padding: 80px 60px 80px 60px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -464,8 +583,7 @@ body {
 
 #cover .book-info {
   height: 600px;
-  border: 1px solid blue;
-  margin: 5px;
+  margin-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,6 +599,7 @@ body {
 #cover .book-info .author span {
   font-size: 33px;
   font-weight: bold;
+  color: #414141;
   display: block;
   margin-bottom: 15px;
 }
@@ -488,6 +607,13 @@ body {
 #cover .book-info .author a {
   text-decoration: none;
   color: #09092c;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#cover .book-info .author h1 a {
+  text-decoration: none;
+  color: #f58322;
   font-size: 30px;
 }
 
@@ -499,6 +625,7 @@ body {
 #cover .book-info .bilgiler {
   width: 85%;
   margin: 0 auto;
+  background-color: #f8f8f8;
 }
 
 #cover .book-info .bilgiler .b-up p {
@@ -520,12 +647,10 @@ body {
 #cover .book-info .bilgiler .b-down .stat {
   width: 45%;
   height: 130px;
-  border: 1px solid blue;
 }
 
 #cover .book-price {
   height: 600px;
-  border: 1px solid blue;
   margin: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -544,7 +669,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 200px;
-  border: 1px solid blue;
 }
 
 #cover .book-price .price .qiymet .ust {
@@ -573,11 +697,12 @@ body {
 }
 
 #cover .book-price .price .sepet .qiymet {
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 #cover .book-price .price .sepet .kazanc {
-  padding: 15px;
+  padding: 30px;
 }
 
 #cover .book-price .price .sepet p {
@@ -587,7 +712,7 @@ body {
 #cover .book-price .price .sepet a {
   text-decoration: none;
   font-size: 15px;
-  margin: 5px;
+  margin: 30px;
   padding: 20px;
   color: white;
   background-color: #b95e5e;
@@ -595,10 +720,9 @@ body {
 
 #cover .author-info {
   height: 200px;
-  border: 1px solid blue;
   position: relative;
   text-align: center;
-  background-color: brown;
+  background-color: #F3BB91;
 }
 
 #cover .author-info p {
@@ -611,6 +735,7 @@ body {
 #cover .author-info .shekil {
   width: 110px;
   height: 110px;
+  z-index: 1;
   border-radius: 100%;
   border: 1px solid blue;
   position: absolute;
@@ -624,17 +749,36 @@ body {
   height: 75%;
   width: 97%;
   background-color: white;
+  position: relative;
 }
 
-#cover .author-info .haqqinda a {
+#cover .author-info .haqqinda .a {
+  position: absolute;
+  bottom: 0%;
+  right: 1%;
   text-decoration: none;
+  color: black;
+  padding: 5px 10px 5px 10px;
+  background-color: #dadada;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cover .author-info .haqqinda .b {
+  position: absolute;
+  bottom: 0%;
+  right: 30%;
+  text-decoration: none;
+  margin-right: 5px;
+  background-color: #dadada;
+  border-radius: 5px;
   color: black;
   padding: 5px 10px 5px 10px;
   cursor: pointer;
 }
 
 #cover .author-info .haqqinda p {
-  color: black;
+  color: #383838;
   padding: 50px 0 50px 0;
 }
 
@@ -696,10 +840,10 @@ body {
 }
 
 #main .hesabim .ust-div .hesab-div {
+  background-color: #f8f8f8;
   position: absolute;
   width: 100%;
   height: 100px;
-  border: 1px solid blue;
   text-align: center;
   position: relative;
   -webkit-box-sizing: border-box;
@@ -711,13 +855,15 @@ body {
 #main .hesabim .ust-div .hesab-div span {
   font-size: 20px;
   font-weight: bold;
+  color: #585858;
 }
 
 #main .hesabim .ust-div .circle-div {
+  z-index: 1;
   position: absolute;
+  background-color: #f58322;
   height: 100px;
   width: 100px;
-  border: 1px solid brown;
   border-radius: 50px;
 }
 
@@ -726,11 +872,17 @@ body {
   top: 38px;
   left: 38px;
   font-size: 25px;
-  color: brown;
+  color: #6d3838;
 }
 
 #main .row .item {
   margin: 0px 10px 0px 10px;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0px 20px 10px;
   cursor: pointer;
+}
+
+#main .row .item span {
+  color: #3f3f3f;
+  font-weight: bold;
+  font-size: 14px;
 }
